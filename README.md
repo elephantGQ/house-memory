@@ -23,6 +23,7 @@
 - Scan records a capture session, device metadata, date, and measured baseline.
 - Anchor records a user-confirmed point such as a doorway corner, including its measurement source.
 - Observation records a pipe, wire, shutoff, or material with source media, room-relative position, transform, and confidence.
+- Starter TypeScript interfaces for Room, Scan, Anchor, and Observation are in [src/domain.ts](src/domain.ts). They define data shapes only; they do not implement capture, storage, or validation.
 
 ## Safety and limits
 
@@ -30,4 +31,4 @@ This is a documentation aid, **not** an inspection, as-built certification, or i
 
 ## Status
 
-Architecture proposal only. The application, API, spatial alignment, and Devin Bot workflow have not been implemented or validated. The first engineering milestone should measure coordinate error against tape-measured fixtures across repeated scans before making accuracy claims.
+Architecture and starter data contracts only. The application, API, media capture, persistence, spatial alignment, and Devin Bot workflow have not been implemented or validated. The first engineering milestone should measure coordinate error against tape-measured fixtures across repeated scans before making accuracy claims.
